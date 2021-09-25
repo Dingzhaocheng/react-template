@@ -28,7 +28,7 @@ const Chart:FC<IProps> = (props)=>{
         if (!echartsInstance.current) {
             return
         }
-      /*   echartsInstance.current.dispose()
+      /*   echartsInstance.current.dispose()  不执行也居然会被回收，结合最近chrome 优化内存占用问题，需要考究下引擎垃圾回收
         echartsInstance.current = null */
     }
 
